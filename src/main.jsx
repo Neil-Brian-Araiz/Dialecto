@@ -18,7 +18,7 @@ import ContentFour from './content/Content_Four';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/dialecto',
     element: <OnBoarding />,
     errorElement: <div>404 Not Found</div>
   },
