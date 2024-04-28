@@ -1,0 +1,44 @@
+.home-wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.interactive-slider-container {
+    position: relative;
+}
+
+.kite {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 6%;
+    right: 20%;
+    z-index: 1;
+}
+
+.kite1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 75%;
+    right: 58%;
+    z-index: 1;
+}
+
+.star {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 0;
+    right: 75%;
+    z-index: 0;
+}
+
+
+/*** Media Queries ***/
+
+@media (max-width: 767px) {
+    .kite, .kite1, .star {
+        display: none;
+    }
+}
