@@ -54,7 +54,7 @@ const Header = () => {
                     <IconButton imageUrl={ProgressIcon} label="Progress" bgColor="var(--primary-color)" /> 
                 </div>
                 
-                <Link to='/'>
+                <Link to='/dialecto'>
                     <Button label='Log out' outline={false} bgColor='var(--secondary-color)' width='230px' />
                 </Link>
             </div>
