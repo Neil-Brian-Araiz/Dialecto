@@ -2,20 +2,20 @@ import React from 'react';
 
 
 import Header from '../components/header';
-import Slider from '../components/Slider_Interactive';
+import SliderStandby from '../components/Slider_Standby';
 import Kite from '../assets/kite.png';
 import Kite1 from '../assets/kite1.png';
 import Star from '../assets/star1.png';
 
 import './page.css';
 
-const Home = () => {
+const HomeStandby = () => {
     return (
-        <div className='home-wrapper'>
-            <Header />
-
+        <div>
+            <Header showCategoriesButton={true} showSwitchButton={true} />
+            
             <div className='interactive-slider-container'>
-                <Slider />
+                <SliderStandby />
                 <img src={Kite} alt="Kite" className='kite'/>
                 <img src={Kite1} alt="Kite" className='kite1'/>
                 <img src={Star} alt="Star" className='star'/>
@@ -24,4 +24,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomeStandby;

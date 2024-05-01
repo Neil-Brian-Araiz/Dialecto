@@ -12,12 +12,12 @@ const Slider = () => {
     const navigate = useNavigate();
 
     const array = [
-        {pic: DiaclectImg, label: 'Dialect 1', nav: '/content-one'}, 
-        {pic: DiaclectImg, label: 'Dialect 2', nav: '/content-two', bgColor: 'aqua'},
-        {pic: DiaclectImg, label: 'Dialect 3', nav: '/content-three', bgColor: '#7FBCD2'},
-        {pic: DiaclectImg, label: 'Dialect 4', nav: '/content-four', bgColor: '#FFEA20'},
-        {pic: DiaclectImg, label: 'Dialect 5', nav: '/content-four', bgColor: '#EDB7ED'},
-        {pic: DiaclectImg, label: 'Dialect 6', nav: '/content-four', bgColor: '#EDB7ED'},
+        {pic: DiaclectImg, label: 'Dialect 1', nav: '/animal-category'}, 
+        {pic: DiaclectImg, label: 'Dialect 2', nav: '', bgColor: 'aqua'},
+        {pic: DiaclectImg, label: 'Dialect 3', nav: '', bgColor: '#7FBCD2'},
+        {pic: DiaclectImg, label: 'Dialect 4', nav: '', bgColor: '#FFEA20'},
+        {pic: DiaclectImg, label: 'Dialect 5', nav: '', bgColor: '#EDB7ED'},
+        {pic: DiaclectImg, label: 'Dialect 6', nav: '', bgColor: '#EDB7ED'},
     ]
 
   return (

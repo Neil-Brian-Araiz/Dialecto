@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { BiSolidCategory } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 import './shared.css';
 
@@ -11,10 +12,10 @@ const CategoriesButton = () => {
         <BiSolidCategory className='drop-btn-icon'/>
       </button>
       <div className='drop-btn-content'>
-        <a href='#'>Option 1</a>
-        <a href='#'>Option 2</a>
-        <a href='#'>Option 3</a>
-        <a href='#'>Option 4</a>
+        <Link to='/animal-category' className='drop-content'>Animal</Link>
+        <Link to='/basic-phrases-category' className='drop-content'>Basic Phrases</Link>
+        <Link to='/food-category' className='drop-content'>Food</Link>
+        <Link to='/household-item-category' className='drop-content'>Houseold Items</Link>
       </div>
     </div>
   )

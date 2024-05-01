@@ -216,7 +216,7 @@
   z-index: 20;
 }
 
-.drop-btn-content a {
+.drop-content {
   color: black;
   padding: 8px 12px;
   text-decoration: none;
@@ -226,7 +226,7 @@
   display: block;
 }
 
-.drop-btn-content a:hover {
+.drop-content:hover {
   background-color: #f1f1f1;
   color: black;
 }
@@ -318,6 +318,25 @@
   background-color: aqua;
 }
 
+.ctg-btn {
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  z-index: 30;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: all .5s ease-in-out;
+}
+
+.ctg-btn:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
 /*** Media Queries ***/
 
 @media (max-width: 767px) {
@@ -353,3 +372,6 @@
     width: 180px;
   }
 }
+
+/*** CTG Button ***/
+

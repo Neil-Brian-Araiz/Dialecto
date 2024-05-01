@@ -14,59 +14,59 @@ import ProgressIcon from '../assets/progress.png';
 
 import './components.css';
 
-const Header = () => {
+const Header = ({ showCategoriesButton, showSwitchButton }) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-
     const sidebarRef = useRef();
-
+  
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-                setSidebarOpen(false);
-            }
-        };
-
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
+      const handleClickOutside = (event) => {
+        if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+          setSidebarOpen(false);
+        }
+      };
+  
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
     }, []);
-
+  
     const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen);
+      setSidebarOpen(!sidebarOpen);
     };
-
+  
     const closeSidebar = () => {
-        setSidebarOpen(false);
+      setSidebarOpen(false);
     };
-
+  
     return (
-        <div className='header-container'>
-            <HamburgerMenu onClick={toggleSidebar} />
-
-            <div className={`sidebar ${sidebarOpen ? 'open' : ''}`} ref={sidebarRef}>
-                <button className="close-btn" onClick={closeSidebar}>
-                    <IoClose />
-                </button>
-                
-                <div className='sidebar-nav'>
-                    <IconButton imageUrl={ProfileIcon} label="Profile" bgColor="var(--primary-color)" />
-                    <IconButton imageUrl={ProgressIcon} label="Progress" bgColor="var(--primary-color)" /> 
-                </div>
-                
-                <Link to='/dialecto'>
-                    <Button label='Log out' outline={false} bgColor='var(--secondary-color)' width='230px' />
-                </Link>
-            </div>
-
-            <div className='right-container'>
-                <CategoriesButton />
-                <SwitchButton />
-                <FilterIcon />
-                <SearchIcon />
-            </div>
+      <div className='header-container'>
+        <HamburgerMenu onClick={toggleSidebar} />
+  
+        <div className={`sidebar ${sidebarOpen ? 'open' : ''}`} ref={sidebarRef}>
+          <button className="close-btn" onClick={closeSidebar}>
+            <IoClose />
+          </button>
+          
+          <div className='sidebar-nav'>
+            <IconButton imageUrl={ProfileIcon} label="Profile" bgColor="var(--primary-color)" />
+            <IconButton imageUrl={ProgressIcon} label="Progress" bgColor="var(--primary-color)" /> 
+          </div>
+          
+          <Link to='/dialecto'>
+            <Button label='Log out' outline={false} bgColor='var(--secondary-color)' width='230px' />
+          </Link>
         </div>
+  
+        <div className='right-container'>
+          {showCategoriesButton && <CategoriesButton />}
+          {showSwitchButton && <SwitchButton />}
+          <FilterIcon />
+          <SearchIcon />
+        </div>
+      </div>
     );
-};
-
-export default Header;
+  };
+  
+  export default Header;
+  
