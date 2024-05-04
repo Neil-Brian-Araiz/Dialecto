@@ -12,7 +12,7 @@ import './page.css';
 const HomeStandby = () => {
     return (
         <div>
-            <Header showCategoriesButton={true} showSwitchButton={true} />
+            <Header showCategoriesButton={false} showSwitchButton={true} />
             
             <div className='interactive-slider-container'>
                 <SliderStandby />

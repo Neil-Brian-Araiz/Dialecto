@@ -8,14 +8,28 @@ const SwitchButton = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const label =
-    location.pathname === "/animal-category" ? "INTERACTIVE MODE" : "STANDBY MODE";
+  let label = "STANDBY MODE"; 
+
+  if (
+    location.pathname === "/animal-category" ||
+    location.pathname === "/food-category" ||
+    location.pathname === "/household-item-category" ||
+    location.pathname === "/basic-phrases-category"
+  ) {
+    label = "INTERACTIVE MODE";
+  }
 
   const handleClick = () => {
-    const path =
-      location.pathname === "/home-standby" ? "/animal-category" : "/home-standby";
-
-    navigate(path);
+    if (
+      location.pathname === "/animal-category" ||
+      location.pathname === "/food-category" ||
+      location.pathname === "/household-item-category" ||
+      location.pathname === "/basic-phrases-category"
+    ) {
+      navigate("/home-standby");
+    } else {
+      navigate(-1);
+    }
   };
 
   return (
