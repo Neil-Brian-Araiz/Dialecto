@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentHeader from '../components/ContentHeader';
 import ContentButton from '../components/shared/ContentBtn';
-import GIF from '../assets/gif.gif';
+import GIF from '../assets/fighting.gif';
 
 import './Content.css';
 
