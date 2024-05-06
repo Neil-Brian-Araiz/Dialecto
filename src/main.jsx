@@ -20,6 +20,7 @@ import FoodCategory from './category/Foods';
 import HouseholdItems from './category/HouseholdItems';
 import BasicPhrases from './category/BasicPhrases';
 import ProfilePage from './pages/Profile';
+import ProgressPage from './pages/Progress';
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
   {
     path: '/profile-page',
     element: <ProfilePage />
+  },
+  {
+    path: '/progress-page',
+    element: <ProgressPage />
   }
 ]);
 

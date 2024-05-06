@@ -62,6 +62,7 @@ const Header = ({ showCategoriesButton, showSwitchButton }) => {
               imageUrl={ProgressIcon} 
               label="Progress" 
               bgColor="var(--primary-color)" 
+              navigateTo={() => navigate('/progress-page')} 
             /> 
           </div>
           
