@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
 
 import HamburgerMenu from './shared/Hamburger';
@@ -15,6 +16,8 @@ import ProgressIcon from '../assets/progress.png';
 import './components.css';
 
 const Header = ({ showCategoriesButton, showSwitchButton }) => {
+    const navigate = useNavigate();
+
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const sidebarRef = useRef();
   
@@ -49,8 +52,17 @@ const Header = ({ showCategoriesButton, showSwitchButton }) => {
           </button>
           
           <div className='sidebar-nav'>
-            <IconButton imageUrl={ProfileIcon} label="Profile" bgColor="var(--primary-color)" />
-            <IconButton imageUrl={ProgressIcon} label="Progress" bgColor="var(--primary-color)" /> 
+            <IconButton 
+              imageUrl={ProfileIcon} 
+              label="Profile" 
+              bgColor="var(--primary-color)" 
+              navigateTo={() => navigate('/profile-page')} 
+            />
+            <IconButton 
+              imageUrl={ProgressIcon} 
+              label="Progress" 
+              bgColor="var(--primary-color)" 
+            /> 
           </div>
           
           <Link to='/dialecto'>

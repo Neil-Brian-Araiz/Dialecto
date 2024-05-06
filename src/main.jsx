@@ -19,6 +19,7 @@ import AnimalCategory from './category/Animals';
 import FoodCategory from './category/Foods';
 import HouseholdItems from './category/HouseholdItems';
 import BasicPhrases from './category/BasicPhrases';
+import ProfilePage from './pages/Profile';
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
   {
     path: '/basic-phrases-category',
     element: <BasicPhrases />
+  },
+  {
+    path: '/profile-page',
+    element: <ProfilePage />
   }
 ]);
 
