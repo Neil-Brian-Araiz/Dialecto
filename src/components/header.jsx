@@ -56,13 +56,13 @@ const Header = ({ showCategoriesButton, showSwitchButton }) => {
               imageUrl={ProfileIcon} 
               label="Profile" 
               bgColor="var(--primary-color)" 
-              navigateTo={() => navigate('/profile-page')} 
+              navigateTo={() => navigate('/dialecto/profile-page')} 
             />
             <IconButton 
               imageUrl={ProgressIcon} 
               label="Progress" 
               bgColor="var(--primary-color)" 
-              navigateTo={() => navigate('/progress-page')} 
+              navigateTo={() => navigate('/dialecto/progress-page')} 
             /> 
           </div>
           

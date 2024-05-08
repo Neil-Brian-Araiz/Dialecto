@@ -16,10 +16,10 @@ function OnBoarding() {
             </p>
             
             <div className='btn-container'>
-                <Link to='/sign-up'>
+                <Link to='/dialecto/sign-up'>
                     <Button label="GET STARTED" outline={false} />
                 </Link>
-                <Link to='/sign-in'>
+                <Link to='/dialecto/sign-in'>
                     <Button label="I HAVE AN ACCOUNT" outline={true} />
                 </Link>
             </div>

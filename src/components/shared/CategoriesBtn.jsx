@@ -12,10 +12,10 @@ const CategoriesButton = () => {
         <BiSolidCategory className='drop-btn-icon'/>
       </button>
       <div className='drop-btn-content'>
-        <Link to='/animal-category' className='drop-content'>Animal</Link>
-        <Link to='/basic-phrases-category' className='drop-content'>Basic Phrases</Link>
-        <Link to='/food-category' className='drop-content'>Food</Link>
-        <Link to='/household-item-category' className='drop-content'>Houseold Items</Link>
+        <Link to='/dialecto/animal-category' className='drop-content'>Animal</Link>
+        <Link to='/dialecto/basic-phrases-category' className='drop-content'>Basic Phrases</Link>
+        <Link to='/dialecto/food-category' className='drop-content'>Food</Link>
+        <Link to='/dialecto/household-item-category' className='drop-content'>Houseold Items</Link>
       </div>
     </div>
   )

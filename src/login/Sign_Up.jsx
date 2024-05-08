@@ -26,13 +26,13 @@ const SignUp = () => {
                 </div>
 
                 <div className='signUp-btn'>
-                    <Link to='/sign-in'> <Button label="SIGN UP"/> </Link>
+                    <Link to='/dialecto/sign-in'> <Button label="SIGN UP"/> </Link>
                 </div>
 
                 <h5>
                     Already have an account?{' '} 
                     <span>
-                        <Link to='/sign-in' className='signUp-link'>Sign In</Link>
+                        <Link to='/dialecto/sign-in' className='signUp-link'>Sign In</Link>
                     </span>
                 </h5>
             </form>

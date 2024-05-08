@@ -12,7 +12,7 @@ const Slider = () => {
     const navigate = useNavigate();
 
     const array = [
-        {pic: DiaclectImg, label: 'Dialect 1', nav: '/animal-category'}, 
+        {pic: DiaclectImg, label: 'Dialect 1', nav: '/dialecto/animal-category'}, 
         {pic: DiaclectImg, label: 'Dialect 2', nav: '', bgColor: 'aqua'},
         {pic: DiaclectImg, label: 'Dialect 3', nav: '', bgColor: '#7FBCD2'},
         {pic: DiaclectImg, label: 'Dialect 4', nav: '', bgColor: '#FFEA20'},

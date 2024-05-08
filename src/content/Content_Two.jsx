@@ -2,7 +2,7 @@ import React from 'react';
 
 import ContentHeader from '../components/ContentHeader';
 import ContentButton from '../components/shared/ContentBtn';
-import GIF from '../assets/fighting.gif';
+import GIF from '../assets/logo.gif';
 
 import './Content.css';
 
@@ -21,10 +21,10 @@ const ContentTwo = () => {
             <div className='choices-container'>
                 <h2>Choices</h2>
                 <div className='btn-choices-container'>
-                  <ContentButton label='Choice 1'/>
-                  <ContentButton label='Choice 2'/>
-                  <ContentButton label='Choice 3'/>
-                  <ContentButton label='Choice 4'/>
+                  <ContentButton label='Kalabaw'/>
+                  <ContentButton label='Karabaw'/>
+                  <ContentButton label='Kambing'/>
+                  <ContentButton label='Kamote'/>
                 </div>
             </div>
         </div>

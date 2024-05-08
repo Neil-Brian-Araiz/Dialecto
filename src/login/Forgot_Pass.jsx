@@ -23,7 +23,7 @@ const ForgotPass = () => {
                 </div>
 
                 <div className='signUp-btn'>
-                    <Link to='/sign-in'> <Button label="Confirm Password"/> </Link>
+                    <Link to='/dialecto/sign-in'> <Button label="Confirm Password"/> </Link>
                 </div>
             </form>
         </div>

@@ -29,67 +29,67 @@ const router = createBrowserRouter([
     errorElement: <div>404 Not Found</div>
   },
   {
-    path: '/sign-in',
+    path: '/dialecto/sign-in',
     element: <LogIn />
   },
   {
-    path: '/sign-up',
+    path: '/dialecto/sign-up',
     element: <SignUp />
   },
   {
-    path: '/forgot-pass',
+    path: '/dialecto/forgot-pass',
     element: <ForgotPass />
   },
   {
-    path: '/age-selection',
+    path: '/dialecto/age-selection',
     element: <AgeSelection />
   },
   {
-    path: '/home',
+    path: '/dialecto/home',
     element: <Home />
   },
   {
-    path: '/home-standby',
+    path: '/dialecto/home-standby',
     element: <HomeStandby />
   },
   {
-    path: '/content-one',
+    path: '/dialecto/content-one',
     element: <ContentOne />
   },
   {
-    path: '/content-two',
+    path: '/dialecto/content-two',
     element: <ContentTwo />
   },
   {
-    path: '/content-three',
+    path: '/dialecto/content-three',
     element: <ContentThree />
   },
   {
-    path: '/content-four',
+    path: '/dialecto/content-four',
     element: <ContentFour />
   },
   {
-    path: '/animal-category',
+    path: '/dialecto/animal-category',
     element: <AnimalCategory />
   },
   {
-    path: '/food-category',
+    path: '/dialecto/food-category',
     element: <FoodCategory />
   },
   {
-    path: '/household-item-category',
+    path: '/dialecto/household-item-category',
     element: <HouseholdItems />
   },
   {
-    path: '/basic-phrases-category',
+    path: '/dialecto/basic-phrases-category',
     element: <BasicPhrases />
   },
   {
-    path: '/profile-page',
+    path: '/dialecto/profile-page',
     element: <ProfilePage />
   },
   {
-    path: '/progress-page',
+    path: '/dialecto/progress-page',
     element: <ProgressPage />
   }
 ]);

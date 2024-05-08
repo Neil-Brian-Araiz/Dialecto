@@ -28,17 +28,17 @@ const SignUp = () => {
                 </div>
 
                 <div className='signUp-btn'>
-                    <Link to='/home'> <Button label="SIGN IN"/> </Link>
+                    <Link to='/dialecto/home'> <Button label="SIGN IN"/> </Link>
                 </div>
 
                 <h4>
-                    <Link to='/forgot-pass' className='forgot-pass-link'>Forgot Password</Link>
+                    <Link to='/dialecto/forgot-pass' className='forgot-pass-link'>Forgot Password</Link>
                 </h4>
 
                 <h5>
                     Don't have an account?{' '} 
                     <span>
-                        <Link to='/sign-up' className='signUp-link'>Sign Up</Link>
+                        <Link to='/dialecto/sign-up' className='signUp-link'>Sign Up</Link>
                     </span>
                 </h5>
 
