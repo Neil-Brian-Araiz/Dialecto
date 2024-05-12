@@ -21,6 +21,7 @@ import HouseholdItems from './category/HouseholdItems';
 import BasicPhrases from './category/BasicPhrases';
 import ProfilePage from './pages/Profile';
 import ProgressPage from './pages/Progress';
+import Video from './content/BasicVid';
 
 const router = createBrowserRouter([
   {
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
   {
     path: '/dialecto/progress-page',
     element: <ProgressPage />
+  },
+  {
+    path: '/dialecto/video',
+    element: <Video />
   }
 ]);
 

@@ -188,6 +188,30 @@
 }
 
 
+/*** Video ***/
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.video-wrapper h2 {
+    font-size: 1.8rem;
+}
+
+.vid-container button {
+    display: flex;
+    align-items: start;
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+
+
 /*** Media Queries ***/
 
 

@@ -225,20 +225,9 @@
     border-radius: 1em;
     padding: 17px;
     overflow: hidden;
-}
-
-.ach-graph > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 1em;
-    transition: 200ms transform ease-in-out;
-}
-
-.ach-graph > img:hover {
-    transform: scale(1.025);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mistake-container {
