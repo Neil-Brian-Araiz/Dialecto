@@ -12,7 +12,7 @@ function OnBoarding() {
             <Logo />
             <h1>DIALECTO</h1>
             <p>
-            Lorem ipsum lorem ipsum heas jsbdf asdnfsd shbdfhs ksdf ksjdf ksdjf 
+            Let DIALECTO Be Your Guide to Language Mastery! 
             </p>
             
             <div className='btn-container'>
