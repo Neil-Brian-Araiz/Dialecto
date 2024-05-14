@@ -12,12 +12,12 @@ const Slider = () => {
     const navigate = useNavigate();
 
     const array = [
-        {pic: DiaclectImg, label: 'Dialect 1', nav: '/dialecto/animal-category'}, 
-        {pic: DiaclectImg, label: 'Dialect 2', nav: '', bgColor: 'aqua'},
-        {pic: DiaclectImg, label: 'Dialect 3', nav: '', bgColor: '#7FBCD2'},
-        {pic: DiaclectImg, label: 'Dialect 4', nav: '', bgColor: '#FFEA20'},
-        {pic: DiaclectImg, label: 'Dialect 5', nav: '', bgColor: '#EDB7ED'},
-        {pic: DiaclectImg, label: 'Dialect 6', nav: '', bgColor: '#EDB7ED'},
+        {pic: DiaclectImg, label: 'Waray', nav: '/dialecto/animal-category'}, 
+        {pic: DiaclectImg, label: 'Ilocano', nav: '', bgColor: 'aqua'},
+        {pic: DiaclectImg, label: 'Cebuano', nav: '', bgColor: '#7FBCD2'},
+        {pic: DiaclectImg, label: 'Tausog', nav: '', bgColor: '#FFEA20'},
+        {pic: DiaclectImg, label: 'Bicolano', nav: '', bgColor: '#EDB7ED'},
+        {pic: DiaclectImg, label: 'Maranao', nav: '', bgColor: '#EDB7ED'},
     ]
 
   return (

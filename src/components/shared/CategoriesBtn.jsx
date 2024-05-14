@@ -15,7 +15,7 @@ const CategoriesButton = () => {
         <Link to='/dialecto/animal-category' className='drop-content'>Animal</Link>
         <Link to='/dialecto/basic-phrases-category' className='drop-content'>Basic Phrases</Link>
         <Link to='/dialecto/food-category' className='drop-content'>Food</Link>
-        <Link to='/dialecto/household-item-category' className='drop-content'>Houseold Items</Link>
+        <Link to='/dialecto/household-item-category' className='drop-content'>Household Items</Link>
       </div>
     </div>
   )

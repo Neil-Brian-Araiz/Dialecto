@@ -10,12 +10,12 @@ const SliderStandby = () => {
     const navigate = useNavigate();
 
     const array = [
-        {picture: VidThumbnail, label: 'video title', nav: '/dialecto/video'}, 
-        {picture: VidThumbnail, label: 'video title', nav: ''},
-        {picture: VidThumbnail, label: 'video title', nav: ''},
-        {picture: VidThumbnail, label: 'video title', nav: ''},
-        {picture: VidThumbnail, label: 'video title', nav: ''},
-        {picture: VidThumbnail, label: 'video title', nav: ''},
+        {picture: VidThumbnail, label: 'Common Phrases', nav: '/dialecto/video'}, 
+        {picture: VidThumbnail, label: 'Meet the animals', nav: ''},
+        {picture: VidThumbnail, label: 'What to eat?', nav: ''},
+        {picture: VidThumbnail, label: 'What is in my house?', nav: ''},
+        {picture: VidThumbnail, label: 'Video Tittle', nav: ''},
+        {picture: VidThumbnail, label: 'Video Tittle', nav: ''},
         ]
   return (
     <div className='slider'>
