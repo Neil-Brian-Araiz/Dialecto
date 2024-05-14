@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimatedVideo from '../assets/animate.mp4';
+import AnimatedVideo from '../assets/animated.mp4';
 import ReactPlayer from 'react-player';
 
 import ContentHeader from '../components/ContentHeader';
