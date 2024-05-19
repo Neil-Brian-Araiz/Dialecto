@@ -1,5 +1,9 @@
 import React from 'react';
 
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import Header from '../components/header';
 import Slider from '../components/SliderDialect';
@@ -16,9 +20,9 @@ const Home = () => {
 
             <div className='interactive-slider-container'>
                 <Slider />
-                <img src={Kite} alt="Kite" className='kite'/>
+                {/* <img src={Kite} alt="Kite" className='kite'/>
                 <img src={Kite1} alt="Kite" className='kite1'/>
-                <img src={Star} alt="Star" className='star'/>
+                <img src={Star} alt="Star" className='star'/> */}
             </div>
         </div>
     )
