@@ -150,6 +150,7 @@
 
 .progress-wrapper {
     width: 100%;
+    height: auto;
     background-color: #f4e8dd;
     overflow-x: hidden;
 }
@@ -182,65 +183,31 @@
     margin-left: 20px;
 }
 
-.progress-content {
+.progress-card-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.progress-categ-container {
     width: 100%;
-    flex-direction: row;
-    align-items: start;
+    padding: 20px;
+}
+
+.num-one-container, .num-two-container{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-
-.achievement-container {
-    width: 50%;
-    padding: 0 10px 10px 10px;
-    border-right: 2px var(--primary-color) solid;
+.num-two-container {
+    margin-top: 40px;
 }
 
-.achievement-container h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-}
-
-.ach-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.ach-card {
-    width: 100%;
-}
-
-.ach-card h4 {
-    color: var(--secondary-color);
-    font-size: 1.1em;
-}
-
-.ach-graph {
-    background-color: var(--bg-color);
-    border-radius: 1em;
-    padding: 17px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mistake-container {
-    width: 50%;
-    padding: 0 10px 10px 10px;
-}
-
-.mistake-container h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-}
 
 /*** Media Queries ***/
 
@@ -309,28 +276,21 @@
         font-size: 1.3em;
     }
 
-    .progress-content {
+    .progress-card-container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .progress-categ-container {
+        padding: 10px;
+    }
+
+    .num-one-container, .num-two-container {
         flex-direction: column;
+        gap: 20px;
     }
 
-    .achievement-container {
-        width: 100%;
-        border: none;
-    }
-
-    .mistake-container {
-        width: 100%;
-    }
-
-    .achievement-container h1, .mistake-container h1 {
-        font-size: 1.8em;
-    }
-
-    .ach-card h4 {
-        font-size: 1em;
-    }
-
-    .ach-graph {
-        padding: 12px;
+    .num-two-container {
+        margin-top: 20px;
     }
 }

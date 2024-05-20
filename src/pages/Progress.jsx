@@ -1,98 +1,72 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BarChart } from '@mui/x-charts/BarChart';
-import { axisClasses } from '@mui/x-charts';
 
+import ProgressCategCard from '../components/ProgressCard.jsx';
+import WordsProgress from '../components/WordProgress.jsx';
 import { FaChevronLeft } from "react-icons/fa6";
-import GraphSample1 from '../assets/graph1.jpg';
 import './page.css';
 
 const ProgressPage = () => {
     const navigate = useNavigate();
 
-    const uData = [10, 5, 9, 20, 4, 12, 11];
-    const xData = [8, 15, 7, 11];
+    const cards = [
+        {progTitle: "Animal", progIcon: "paw", percentage: 75, bgColor: "#7FBCD2", numWord: "10"},
+        {progTitle: "Basic Phrases", progIcon: "library", percentage: 50, bgColor: "#E3CF23", numWord: "10"},
+        {progTitle: "Food", progIcon: "nutrition", percentage: 90, bgColor: "#EDB7ED", numWord: "10"},
+        {progTitle: "Household Items", progIcon: "business", percentage: 25, bgColor: "tomato", numWord: "10"},
+    ]
 
-    const xLabels = [
-        'Bisaya',
-        'Bicolano',
-        'Maranao',
-        'Waray',
-        'Ilocano',
-        'Tausog',
-        'Cebuano',
-    ];
+    const animal = [
+        {categWord: "Ayam", wordPercentage: "86%", path: "/dialecto/content-four"},
+        {categWord: "Misay", wordPercentage: "60%", path: "/dialecto/content-four"},
+        {categWord: "Karabaw", wordPercentage: "100%", path: "/dialecto/content-four"},
+        {categWord: "Ulot", wordPercentage: "23%", path: "/dialecto/content-four"},
+        {categWord: "Halas", wordPercentage: "57%", path: "/dialecto/content-four"},
+        {categWord: "Tamsi", wordPercentage: "34%", path: "/dialecto/content-four"},
+        {categWord: "Buaya", wordPercentage: "74%", path: "/dialecto/content-four"},
+        {categWord: "Bugsok", wordPercentage: "22%", path: "/dialecto/content-four"},
+        {categWord: "Mago", wordPercentage: "15%", path: "/dialecto/content-four"},
+        {categWord: "Yatot", wordPercentage: "90%", path: "/dialecto/content-four"},
+    ]
 
-    const cLabels = [
-        'Animal',
-        'Basic Phrases',
-        'Food',
-        'Household Items'
-    ];
+    const basicPhrases = [
+        {categWord: "Kaon", wordPercentage: "67%", path: "/dialecto/content-four"},
+        {categWord: "Nano", wordPercentage: "74%", path: "/dialecto/content-four"},
+        {categWord: "Hain", wordPercentage: "34%", path: "/dialecto/content-four"},
+        {categWord: "Aga", wordPercentage: "76%", path: "/dialecto/content-four"},
+        {categWord: "Mahumot", wordPercentage: "56%", path: "/dialecto/content-four"},
+        {categWord: "Pahuram", wordPercentage: "34%", path: "/dialecto/content-four"},
+        {categWord: "Paalayon", wordPercentage: "85%", path: "/dialecto/content-four"},
+        {categWord: "Buwas", wordPercentage: "64%", path: "/dialecto/content-four"},
+        {categWord: "Bulig", wordPercentage: "36%", path: "/dialecto/content-four"},
+        {categWord: "Nakaturog", wordPercentage: "50%", path: "/dialecto/content-four"},
+    ]
 
-    const chartSetting = {
-        width: 500,
-        height: 300,
-        sx: {
-          [`.${axisClasses.left} .${axisClasses.label}`]: {
-            transform: 'translate(-20px, 0)',
-          },
-        },
-      };
+    const food = [
+        {categWord: "Luto", wordPercentage: "32%", path: "/dialecto/content-four"},
+        {categWord: "Monggos", wordPercentage: "50%", path: "/dialecto/content-four"},
+        {categWord: "Bonay", wordPercentage: "56%", path: "/dialecto/content-four"},
+        {categWord: "Utan", wordPercentage: "16%", path: "/dialecto/content-four"},
+        {categWord: "Tarong", wordPercentage: "35%", path: "/dialecto/content-four"},
+        {categWord: "Lasuna", wordPercentage: "76%", path: "/dialecto/content-four"},
+        {categWord: "Asukar", wordPercentage: "84%", path: "/dialecto/content-four"},
+        {categWord: "Lubi", wordPercentage: "34%", path: "/dialecto/content-four"},
+        {categWord: "Kapayas", wordPercentage: "64%", path: "/dialecto/content-four"},
+        {categWord: "Pasayan", wordPercentage: "24%", path: "/dialecto/content-four"},
+    ]
 
-      const dataset = [
-        {
-          animal: 4,
-          basicphrases: 8,
-          food: 2,
-          household: 7,
-          dialect: 'Bisaya',
-        },
-        {
-          animal: 9,
-          basicphrases: 4,
-          food: 2,
-          household: 8,
-          dialect: 'Bicolano',
-        },
-        {
-          animal: 10,
-          basicphrases: 3,
-          food: 6,
-          household: 4,
-          dialect: 'Maranao',
-        },
-        {
-          animal: 4,
-          basicphrases: 2,
-          food: 2,
-          household: 6,
-          dialect: 'Waray',
-        },
-        {
-          animal: 7,
-          basicphrases: 9,
-          food: 2,
-          household: 9,
-          dialect: 'Ilocano',
-        },
-        {
-          animal: 6,
-          basicphrases: 3,
-          food: 3,
-          household: 4,
-          dialect: 'Tusog',
-        },
-        {
-          animal: 7,
-          basicphrases: 8,
-          food: 5,
-          household: 3,
-          dialect: 'Cebuano',
-        }
-      ];
-    
-    const valueFormatter = (value) => `${value}`;
+    const household = [
+        {categWord: "Huwataw", wordPercentage: "50%", path: "/dialecto/content-four"},
+        {categWord: "Balde", wordPercentage: "46%", path: "/dialecto/content-four"},
+        {categWord: "Martilyu", wordPercentage: "93%", path: "/dialecto/content-four"},
+        {categWord: "Purtahan", wordPercentage: "54%", path: "/dialecto/content-four"},
+        {categWord: "Kabo", wordPercentage: "24%", path: "/dialecto/content-four"},
+        {categWord: "Kalo", wordPercentage: "68%", path: "/dialecto/content-four"},
+        {categWord: "Higdaan", wordPercentage: "94%", path: "/dialecto/content-four"},
+        {categWord: "Lingkuran", wordPercentage: "23%", path: "/dialecto/content-four"},
+        {categWord: "Saraan", wordPercentage: "64%", path: "/dialecto/content-four"},
+        {categWord: "Pasayan", wordPercentage: "50%", path: "/dialecto/content-four"},
+    ]
 
     return (
         <div className='progress-wrapper'>
@@ -103,58 +77,27 @@ const ProgressPage = () => {
                 <h4>Dialecto Adventure</h4>
             </div>
 
-            <div className='progress-content'>
-                <div className='achievement-container'>
-                    <h1>Achievements</h1>
-                    <div className='ach-wrapper'>
-                        <div className='ach-card'>
-                            <h4>Favorite Dialectos</h4>
-                            <div className="ach-graph">
-                                <BarChart
-                                    width={550}
-                                    height={300}
-                                    series={[
-                                        { data: uData, id: 'uvId' },
-                                    ]}
-                                    xAxis={[{ data: xLabels, scaleType: 'band' }]}
-                                />
-                            </div>
-                        </div>
+            <div className="progress-card-container">
+                {cards.map(card => (
+                    <ProgressCategCard 
+                        progTitle={card.progTitle} 
+                        progIcon={card.progIcon}
+                        percentage={card.percentage} 
+                        bgColor={card.bgColor}
+                        numWord={card.numWord}
+                        textColor={card.bgColor}
+                    />
+                ))}
+            </div>
 
-                        <div className='ach-card'>
-                            <h4>Favorite Categories</h4>
-                            <div className='ach-graph'>
-                                <BarChart
-                                    width={550}
-                                    height={300}
-                                    series={[
-                                        { data: xData, id: 'uvId' },
-                                    ]}
-                                    xAxis={[{ data: cLabels, scaleType: 'band' }]}
-                                />
-                            </div>
-                        </div>
-                    </div>
+            <div className="progress-categ-container">
+                <div className="num-one-container">
+                    <WordsProgress title={"Animal"} words={animal} wordIcon={"paw"} bgColor={"#7FBCD2"} />
+                    <WordsProgress title={"Basic Phrases"} words={basicPhrases} wordIcon={"library"} bgColor={"#E3CF23"} />
                 </div>
-
-                <div className='mistake-container'>
-                    <h1>Mistakes</h1>
-                    <div className='ach-card'>
-                        <h4>Opps! Let's Try These Again!</h4>
-                        <div className='ach-graph'>
-                            <BarChart
-                                dataset={dataset}
-                                xAxis={[{ scaleType: 'band', dataKey: 'dialect' }]}
-                                series={[
-                                    { dataKey: 'animal', label: 'Animal', valueFormatter },
-                                    { dataKey: 'basicphrases', label: 'Basic Phrases', valueFormatter },
-                                    { dataKey: 'food', label: 'Food', valueFormatter },
-                                    { dataKey: 'household', label: 'Household Items', valueFormatter },
-                                ]}
-                                {...chartSetting}
-                            />
-                        </div>
-                    </div>
+                <div className="num-two-container">
+                    <WordsProgress title={"Foods"} words={food} wordIcon={"nutrition"} bgColor={"#EDB7ED"} />
+                    <WordsProgress title={"Household Items"} words={household} wordIcon={"business"} bgColor={"tomato"} />
                 </div>
             </div>
         </div>
