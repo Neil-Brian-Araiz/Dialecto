@@ -15,12 +15,12 @@ const CustomSlider = () => {
   const navigate = useNavigate();
 
   const array = [
-    { pic: DiaclectImg, label: 'Waray', nav: '/dialecto/animal-category', bgColor: '#FFD700' },
-    { pic: DiaclectImg, label: 'Ilocano', nav: '', bgColor: 'aqua' },
-    { pic: DiaclectImg, label: 'Cebuano', nav: '', bgColor: '#7FBCD2' },
-    { pic: DiaclectImg, label: 'Tausog', nav: '', bgColor: '#FFEA20' },
-    { pic: DiaclectImg, label: 'Bicolano', nav: '', bgColor: '#EDB7ED' },
-    { pic: DiaclectImg, label: 'Maranao', nav: '', bgColor: '#EDB7ED' },
+    { pic: DiaclectImg, btnLabel: 'Play now!', label: 'Waray', nav: '/dialecto/animal-category', bgColor: '#FFD700' },
+    { pic: DiaclectImg, btnLabel: 'Play now!', label: 'Ilocano', nav: '', bgColor: 'aqua' },
+    { pic: DiaclectImg, btnLabel: 'Play now!', label: 'Cebuano', nav: '', bgColor: '#7FBCD2' },
+    { pic: DiaclectImg, btnLabel: 'Play now!', label: 'Tausog', nav: '', bgColor: '#A1F54D' },
+    { pic: DiaclectImg, btnLabel: 'Play now!', label: 'Bicolano', nav: '', bgColor: '#EDB7ED' },
+    { pic: DiaclectImg, btnLabel: 'Play now!', label: 'Maranao', nav: '', bgColor: '#FBD78A' },
   ];
 
   return (
@@ -52,7 +52,9 @@ const CustomSlider = () => {
               <div className="slider-card-img">
                 <img src={arrayItem.pic} alt="Dialect" />
               </div>
-              <SliderBtn label={arrayItem.label} navigateTo={() => navigate(arrayItem.nav)} />
+              <h2>{arrayItem.label}</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ea debitis ipsa qui, quisquam dignissimos nisi totam? Deleniti commodi laborum, suscipit nemo alias consequatur quod dicta quisquam ullam dolorem necessitatibus.</p>
+              <SliderBtn label={arrayItem.btnLabel} btnStyle={"slider-btn1"} navigateTo={() => navigate(arrayItem.nav)} />
             </div>
           </SwiperSlide>
         ))}

@@ -111,20 +111,39 @@
   .slider-card {
     height: inherit;
     width: 100%;
-    padding: 20px;
+    height: 100%;
     border-radius: 10px;
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    padding-bottom: 40px;
+  } 
+
+  .slider-card-img {
+    height: 55%;
+    width: 100%;
   }
 
   .slider-card-img > img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
     object-fit: cover;
+  }
+
+  .slider-card h2 {
+    color: var(--secondary-color);
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .slider-card p {
+    padding: 0 20px 10px 20px;
+    color: #8e4512;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   }
   
   .slider-controler {

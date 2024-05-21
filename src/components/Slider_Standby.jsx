@@ -16,12 +16,12 @@ const SliderStandby = () => {
     const navigate = useNavigate();
 
     const array = [
-        {picture: VidThumbnail, label: 'Common Phrases', nav: '/dialecto/video', bgColor: 'var(--primary-color)'}, 
-        {picture: VidThumbnail, label: 'Meet the animals', nav: '', bgColor: 'var(--primary-color)'},
-        {picture: VidThumbnail, label: 'What to eat?', nav: '', bgColor: 'var(--primary-color)'},
-        {picture: VidThumbnail, label: 'What is in my house?', nav: '', bgColor: 'var(--primary-color)'},
-        {picture: VidThumbnail, label: 'Video Tittle', nav: '', bgColor: 'var(--primary-color)'},
-        {picture: VidThumbnail, label: 'Video Tittle', nav: '', bgColor: 'var(--primary-color)'},
+        {picture: VidThumbnail, btnLabel: 'Watch now!', label: 'Common Phrases', nav: '/dialecto/video', bgColor: 'var(--primary-color)'}, 
+        {picture: VidThumbnail, btnLabel: 'Watch now!', label: 'Meet the animals', nav: '', bgColor: 'var(--primary-color)'},
+        {picture: VidThumbnail, btnLabel: 'Watch now!', label: 'What to eat?', nav: '', bgColor: 'var(--primary-color)'},
+        {picture: VidThumbnail, btnLabel: 'Watch now!', label: 'What is in my house?', nav: '', bgColor: 'var(--primary-color)'},
+        {picture: VidThumbnail, btnLabel: 'Watch now!', label: 'Video Tittle', nav: '', bgColor: 'var(--primary-color)'},
+        {picture: VidThumbnail, btnLabel: 'Watch now!', label: 'Video Tittle', nav: '', bgColor: 'var(--primary-color)'},
         ]
 
   
@@ -54,7 +54,9 @@ const SliderStandby = () => {
               <div className="slider-card-img">
                 <img src={arrayItem.picture} alt="Dialect" />
               </div>
-              <SliderBtn label={arrayItem.label} navigateTo={() => navigate(arrayItem.nav)} />
+              <h2>{arrayItem.label}</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ea debitis ipsa qui, quisquam dignissimos nisi totam? Deleniti commodi laborum, suscipit nemo alias consequatur quod dicta quisquam ullam dolorem necessitatibus.</p>
+              <SliderBtn label={arrayItem.btnLabel} btnStyle={"slider-btn2"} navigateTo={() => navigate(arrayItem.nav)} />
             </div>
           </SwiperSlide>
         ))}
