@@ -17,7 +17,7 @@ import './page.css';
 const HomeStandby = () => {
     return (
         <div>
-            <Header showCategoriesButton={false} showSwitchButton={true} />
+            <Header showCategoriesButton={false} showSwitchButton={true} bgColor={"#f4e8dd"} />
             
             <div className='interactive-slider-container'>
                 <SliderStandby />

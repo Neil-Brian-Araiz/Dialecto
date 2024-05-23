@@ -6,8 +6,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 2%;
-    background-color: var(--bg-color);
+    background-color: #f4e8dd;
     overflow: hidden;
+    z-index: 50;
 }
 
 .right-container {
@@ -39,12 +40,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    z-index: 22;
+    z-index: 50;
 }
 
 .sidebar.open {
     left: 0;
-    z-index: 22;
+    z-index: 99;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, .4);
 }
 
@@ -84,11 +85,12 @@
     width: 100%;
     height: 90vh;
     margin: 0 auto;
-    background-image: url('../assets/wave1.svg');
+    /* background-image: url('../assets/wave1.svg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
+    background-repeat: no-repeat; */
+    background-color: #f4e8dd;
+    z-index: 10;
     overflow: hidden;
   }
   
@@ -96,6 +98,7 @@
     height: 90vh;
     padding: 2rem 0;
     position: relative;
+    z-index: 10;
   }
   
   .swiper-slide {
@@ -106,6 +109,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    z-index: 10;
   }
   
   .slider-card {
@@ -120,11 +124,13 @@
     align-items: center;
     overflow: hidden;
     padding-bottom: 40px;
+    z-index: 10;
   } 
 
   .slider-card-img {
     height: 55%;
     width: 100%;
+    z-index: 10;
   }
 
   .slider-card-img > img {
@@ -132,18 +138,23 @@
     height: 100%;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+    z-index: 10;
   }
 
   .slider-card h2 {
     color: var(--secondary-color);
     font-weight: 800;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
   }
 
   .slider-card p {
     padding: 0 20px 10px 20px;
     color: #8e4512;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    z-index: 10;
   }
   
   .slider-controler {
@@ -152,11 +163,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
   }
   
   .slider-controler .swiper-button-next {
     left: 58% !important;
     transform: translateX(-58%) !important;
+    z-index: 10;
   }
   
   @media (max-width: 990px) {
@@ -235,10 +248,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     width: 100%;
-    color: black;
     padding: 0 20px;
+    background-color: #f4e8dd;
 }
 
 .content-header-container button {
@@ -254,11 +267,13 @@
 .content-header-container span {
     font-size: 1.2rem;
     font-weight: 800;
+    color: var(--secondary-color);
 }
 
 .conter-header-icon {
     font-size: 1.2rem;
     font-weight: 800;
+    color: var(--secondary-color);
 }
 
 /*** Progress Category Card ***/
@@ -440,6 +455,59 @@
     opacity: 1;
   }
 }
+
+
+/*** PopUp ***/
+
+.popup-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+  background: transparent;
+  z-index: 100;
+}
+
+.popup-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 200vw rgba(0, 0, 0, .4);
+  background-color: var(--primary-color);
+  animation: popup1 .3s ease-in-out;
+}
+
+.popup-content > img {
+  height: 80%;
+  width: 80%;
+}
+
+.popup-content button {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 10px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.popup-content button:hover {
+  background-color: var(--secondary-color);
+  color: #f4e8dd;
+  transition: 250ms ease-in-out;
+}
+
 
 /*** Media Queries ***/
 

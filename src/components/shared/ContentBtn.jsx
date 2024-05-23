@@ -2,13 +2,13 @@ import React from 'react';
 
 import './shared.css';
 
-const ContentButton = ({ label, bgColor }) => {
+const ContentButton = ({ label, bgColor, onClick }) => {
     const style = {
         backGroundColor: bgColor
     }
 
     return (
-        <button className='content-btn' style={style}>{label}</button>
+        <button className='content-btn' style={style} onClick={onClick}>{label}</button>
     )
 }
 

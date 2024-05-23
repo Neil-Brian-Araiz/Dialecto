@@ -15,7 +15,7 @@ import ProgressIcon from '../assets/progress.png';
 
 import './components.css';
 
-const Header = ({ showCategoriesButton, showSwitchButton }) => {
+const Header = ({ showCategoriesButton, showSwitchButton, bgColor }) => {
     const navigate = useNavigate();
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -43,7 +43,7 @@ const Header = ({ showCategoriesButton, showSwitchButton }) => {
     };
   
     return (
-      <div className='header-container'>
+      <div className='header-container' style={{backgroundColor: bgColor}}>
         <HamburgerMenu onClick={toggleSidebar} />
   
         <div className={`sidebar ${sidebarOpen ? 'open' : ''}`} ref={sidebarRef}>

@@ -9,10 +9,9 @@ import './Content.css';
 
 const ContentFour = () => {
     return (
-        <div className='content-one-wrapper'>
+        <div className='content-one-wrapper four-wrapper'>
             <ContentHeader />
-
-            <div className='content-title'>Listen and Match your Voice</div>
+            <div className='content-title four-title'>Listen and Match your Voice</div>
 
             <div className='content-one-container'>
                 <div className='speaker-container'>

@@ -16,9 +16,7 @@ import ForgotPass from './login/Forgot_Pass';
 import AgeSelection from './login/Age_Selection';
 import Home from './pages/DialectChoicesPage';
 import HomeStandby from './pages/ContentStandbyPage';
-import ContentOne from './content/Content_One';
-import ContentTwo from './content/Content_Two';
-import ContentThree from './content/Content_Three';
+import GameOne from './content/Game_One';
 import ContentFour from './content/Content_Four';
 import AnimalCategory from './category/Animals';
 import FoodCategory from './category/Foods';
@@ -59,16 +57,8 @@ const router = createBrowserRouter([
     element: <HomeStandby />
   },
   {
-    path: '/dialecto/content-one',
-    element: <ContentOne />
-  },
-  {
-    path: '/dialecto/content-two',
-    element: <ContentTwo />
-  },
-  {
-    path: '/dialecto/content-three',
-    element: <ContentThree />
+    path: '/dialecto/game-one',
+    element: <GameOne />
   },
   {
     path: '/dialecto/content-four',

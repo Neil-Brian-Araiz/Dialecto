@@ -1,14 +1,15 @@
 /*** Content One ***/
 
 .content-one-wrapper {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-color: var(--bg-color);
+    background-color: #f4e8dd;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
+    position: relative;
     /* background-image: url('../assets/try2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,12 +17,27 @@
     background-size: 100% 100%; */
 }
 
+.four-wrapper {
+    height: 100vh;
+}
+
 .content-title {
-    padding: 8px 20px;
-    background-color: red;
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 800;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.four-title {
+    top: 10%;
+    left: 50%; 
+    font-size: 2rem;
+    transform: translate(-50%, -10%);
 }
 
 .content-one-container {
@@ -40,17 +56,19 @@
     flex-direction: column;
     width: 450px;
     height: 350px;
-    background-color: #FFEA20;
-    border-radius: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
 }
 
 .choices-container h2 {
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 800;
-    padding: 10px 12px;
-    background-color: aqua;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 65%;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--bg-color);
 }
 
 .btn-choices-container {
@@ -62,31 +80,34 @@
 .img-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     width: 450px;
     height: 350px;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
 }
 
 .img-wrapper h2 {
-    padding: 10px 20px;
-    background-color: aquamarine;
-    border-radius: 1rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    text-align: center;
+    padding-bottom: 4%;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
 }
 
 .img-container {
     overflow: hidden;
-    margin-bottom: 30px;
+    width: 100%;
+    height: 80%;
 }
 
 .img-container > img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     object-position: center;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .gif-container {
@@ -110,8 +131,8 @@
     flex-direction: column;
     width: 450px;
     height: 350px;
-    background-color: lightblue;
-    border-radius: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
 }
 
 .mic-container {
@@ -121,12 +142,13 @@
     flex-direction: column;
     width: 450px;
     height: 350px;
-    background-color: lightblue;
-    border-radius: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
 }
 
 .speaker-icon, .mic-icon {
     font-size: 12em;
+    color: #ffffff;
 }
 
 .mic-btn {
@@ -187,6 +209,30 @@
     }
 }
 
+/*** Game One ***/
+
+.game-one-container {
+    position: relative;
+    background-color: #f4e8dd;
+    height: 100vh;
+    padding: 20px;
+}
+
+.game-progress-bar {
+    width: 90%;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: #f0d1a9;
+    overflow: hidden;
+    margin: 0 5%;
+}
+
+.game-progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    width: 0; 
+    transition: width 0.3s;
+}
 
 /*** Video ***/
 

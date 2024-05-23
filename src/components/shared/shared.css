@@ -29,7 +29,7 @@
 
 .switch-btn {
   padding: 6px 18px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border: none;
   border-radius: 1em;
   color: #ffffff;
@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   padding: 5px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #ffffff;
   border-radius: .4em;
   font-size: 1.1em;
@@ -73,7 +73,7 @@
   align-items: center;
   justify-content: center;
   padding: 7px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #ffffff;
   border-radius: .7em;
   font-size: 1.1em;
@@ -96,8 +96,8 @@
 }
 
 .slider-btn1:hover {
-  color: var(--secondary-color);
-  background-color: #ffffff;
+  color: var(--primary-color);
+  background-color: #ffe9e9;
   font-size: 1em;
   font-weight: 700;
   transition: all 150ms ease-in-out;
@@ -210,7 +210,7 @@
 /*** Dropdown Button ***/
 
 .drop-btn {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 6px 16px;
@@ -290,7 +290,7 @@
 
 .search-input:focus,.search-input:not(:placeholder-shown) {
   background-color: #fff;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--primary-color);
   width: 250px;
   cursor: none;
   padding: 18px 16px 18px 40px;
@@ -305,8 +305,8 @@
   background-color: #fff;
   border-radius: 10px;
   z-index: -1;
-  fill: var(--secondary-color);
-  border: var(--secondary-color);
+  fill: var(--primary-color);
+  border: var(--primary-color);
 }
 
 .search-input:hover + .search-icon {
@@ -326,21 +326,26 @@
 .content-btn {
   border: none;
   padding: 9px 16px;
-  background-color: #E7DCDC;
-  font-size: 1.2rem;
-  font-weight: 600;
+  background-color: #f4e8dd;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--secondary-color);
   cursor: pointer;
   border-radius: .5rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .content-btn:hover {
-  background-color: aqua;
+  background-color: var(--secondary-color);
+  color: #f4e8dd;
 }
+
+/*** Category Button ***/
 
 .ctg-btn {
   border: none;
   text-align: center;
+  color: var(--secondary-color);
   text-transform: uppercase;
   background-color: #f1f1f1;
   box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.2);
@@ -349,12 +354,13 @@
   cursor: pointer;
   font-size: 1.2em;
   font-weight: 600;
-  transition: all .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .ctg-btn:hover {
   background-color: transparent;
   transform: scale(1.1);
+  color: #ffffff;
 }
 
 /*** Media Queries ***/
